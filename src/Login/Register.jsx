@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Pages/Shared/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const Register = () => {
+    const [success, setSuccess] = useState('')
     const {createUser} = useContext(AuthContext)
     const handleRegister = (e) =>{
         e.preventDefault()
@@ -17,6 +19,9 @@ const Register = () => {
         createUser(email, password)
         .then(result=>{
             console.log(result.user)
+            ;
+            setSuccess(toast("Wow so easy!"))
+            
         })
         .catch(error=>{
             console.error(error.message);
@@ -57,6 +62,9 @@ const Register = () => {
                 </div>
                 
             </div>
+            {
+                success && <div><p>{success}</p><ToastContainer /></div>
+            }
         </div>
     );
 };

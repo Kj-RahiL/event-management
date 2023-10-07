@@ -3,38 +3,38 @@
       {
         "id": 1,
         "title": "Wedding",
-        "img": "https://example.com/wedding.jpg",
+        "img": "https://i.ibb.co/9v05Br6/wedding.jpg",
         "description": "Celebrate your love story with a dream wedding. Our experienced team of wedding planners is here to make your special day a truly magical and unforgettable experience. From selecting the perfect venue to coordinating every detail of the ceremony and reception, we've got you covered. Whether you envision a classic, elegant affair or a unique and quirky celebration, we'll work closely with you to bring your vision to life. With exquisite decor, delectable cuisine, and seamless coordination, your wedding day will be everything you've ever dreamed of."
       },
       {
         "id": 2,
         "title": "Anniversary",
-        "img": "https://example.com/anniversary.jpg",
+        "img": "https://i.ibb.co/kQgXgT8/annayversary.webp",
         "description": "Celebrate your milestone anniversary with a romantic and memorable event. Whether it's your first year together or a golden anniversary, we specialize in creating the perfect atmosphere to honor your love story. Our team will design an intimate and meaningful celebration that reflects your journey together. From romantic dinners under the stars to grand parties with friends and family, we'll help you create cherished memories that will last a lifetime."
       },
       {
         "id": 3,
         "title": "Birthday Party",
-        "img": "https://example.com/birthday.jpg",
+        "img": "https://i.ibb.co/Kw7LyKH/birthday.jpg",
         "description": "Make your birthday a day to remember with a spectacular party. No matter your age, we know how to throw a birthday bash that will leave you and your guests thrilled. From whimsical themes for children's parties to sophisticated soirées for adults, we've got the creativity and expertise to make it extraordinary. Our team will handle everything, from designing the invitations to planning the entertainment and providing delicious catering. Let us take care of the details so you can focus on having a fantastic time with your loved ones."
       },
       {
         "id": 4,
-        "title": "Holiday Party",
-        "img": "https://example.com/holidayparty.jpg",
-        "description": "Spread joy and holiday cheer with a festive party that will leave everyone in high spirits. Whether it's a company holiday gathering or a family celebration, we specialize in creating a warm and inviting atmosphere. Our holiday party planning services include stunning decor, delicious seasonal cuisine, and entertainment that will make your event unforgettable. Let us help you create cherished holiday memories with your colleagues, friends, and family."
+        "title": "Engagement Ceremony",
+        "img": "https://i.ibb.co/VHkxWk2/engagement.jpg",
+        "description": "Begin your journey to forever with a beautiful engagement ceremony. Let us help you create a meaningful and memorable event to mark this special occasion. Whether you prefer an intimate gathering or a grand celebration, our team will ensure that every detail is perfect. From choosing the perfect venue to designing a personalized ceremony, we're here to make your engagement day as enchanting as your love story."
       },
       {
         "id": 5,
         "title": "Corporate Functions",
-        "img": "https://example.com/corporate.jpg",
+        "img": "https://i.ibb.co/Csw3Fg3/Corporate-Events-Function-1.jpg",
         "description": "Elevate your corporate events and functions with our professional planning services. We understand the importance of business gatherings and will ensure that every detail is flawlessly executed. From product launches and conferences to team-building retreats and award ceremonies, we have the experience to make your event a success. Our team will work closely with your organization to deliver a seamless and impressive corporate function that leaves a lasting impact on your clients, partners, and employees."
       },
       {
         "id": 6,
-        "title": "Fashion Concerts",
-        "img": "https://example.com/fashionconcerts.jpg",
-        "description": "Step into the world of glamour and style with our fashion concerts. Experience the fusion of fashion and music in a dazzling event like no other. Our fashion concerts showcase the latest trends, top designers, and talented musicians, creating an unforgettable evening of entertainment and inspiration. Whether you're a fashion enthusiast or simply looking for a night of elegance and creativity, our fashion concerts promise an extraordinary experience that will leave you captivated and inspired."
+        "title": "Music Concerts",
+        "img": "https://i.ibb.co/609B8Mm/music.jpg",
+        "description": "Experience the magic of live music with our music concerts. Whether you're a fan of rock, pop, classical, or any other genre, we bring top artists and bands to the stage for unforgettable performances. Get ready to groove to the beats, sing along with your favorite songs, and immerse yourself in the incredible energy of live music. Our music concerts promise to deliver a night of pure entertainment and musical bliss that you won't want to miss."
       }
     ]
   }

@@ -1,29 +1,69 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
+import { AuthContext } from "../../Provider/AuthProvider";
+
 
 
 const Navbar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
-    const handleSignOut = () =>{
+    const handleSignOut = () => {
         logOut()
-        .then(()=>{
-            console.log('sign out successfully')
-        })
-        .catch(error=>{
-            console.error(error.message)
-        })
+            .then(() => {
+                console.log('sign out successfully')
+            })
+            .catch(error => {
+                console.error(error.message)
+            })
     }
     const link = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/service">Service</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/blogs">Blog</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/"
+            style={({ isActive }) => {
+                return {
+                    color: isActive ? "white" : "",
+                    fontWeight: isActive ? "bold" : "",
+                };
+            }}
+
+        >Home</NavLink></li>
+        <li><NavLink to="/service"
+            style={({ isActive }) => {
+                return {
+                    color: isActive ? "white" : "",
+                    fontWeight: isActive ? "bold" : "",
+                };
+            }}
+        >Service</NavLink></li>
+
+        <li><NavLink to="/about"
+            style={({ isActive }) => {
+                return {
+                    color: isActive ? "white" : "",
+                    fontWeight: isActive ? "bold" : "",
+                };
+            }}
+        >About</NavLink></li>
+
+        <li><NavLink to="/blogs"
+            style={({ isActive }) => {
+                return {
+                    color: isActive ? "white" : "",
+                    fontWeight: isActive ? "bold" : "",
+                };
+            }}
+        >Blog</NavLink></li>
+
+        <li><NavLink to="/contact"
+            style={({ isActive }) => {
+                return {
+                    color: isActive ? "white" : "",
+                    fontWeight: isActive ? "bold" : "",
+                };
+            }}>Contact</NavLink></li>
+
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#000000bd] shadow-slate-900 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,7 +73,7 @@ const Navbar = () => {
                         {link}
                     </ul>
                 </div>
-                <Link to='/'><h2>event</h2></Link>
+                <Link to='/'><h2>Event.BD</h2></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,10 +82,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ? 
-                    <button onClick={handleSignOut} className="btn">SignOut</button>
-                    :
-                    <Link to='/login' className="btn">Login</Link>
+                    user ?
+                        <button onClick={handleSignOut} className="btn">SignOut</button>
+                        :
+                        <Link to='/login' className="btn">Login</Link>
                 }
 
                 {/* <Link to='/login' className="btn">Login</Link> */}
