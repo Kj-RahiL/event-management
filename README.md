@@ -1,7 +1,7 @@
 # Social Event Management website
 
 
-### live link: 
+### live link: https://social-events-bd.web.app
 
 
 #### Website Features
