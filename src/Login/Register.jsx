@@ -29,7 +29,7 @@ const Register = () => {
     }
     return (
         <div>
-            <Navbar></Navbar>
+           
             <div className=" w-3/4 md:1/2 lg:w-1/3 mx-auto ">
                 <div className="px-10 border mt-10 rounded shadow ">
                     <h2 className="my-6 text-3xl text-center underline text-gray-600 font-bold">Create An Account</h2>

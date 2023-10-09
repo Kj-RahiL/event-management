@@ -1,10 +1,13 @@
-import Navbar from "../Shared/Navbar";
+import ContactFrom from "./ContactFrom";
+import ContactInfo from "./ContactInfo";
+
 
 
 const Contact = () => {
     return (
         <div>
-            <Navbar></Navbar>
+           <ContactInfo></ContactInfo>
+           <ContactFrom></ContactFrom>
         </div>
     );
 };

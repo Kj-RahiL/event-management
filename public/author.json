@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+      "author_name": "John Doe",
+      "author_img_url": "https://i.ibb.co/sV31sp5/remi-turcotte-Musa-Z8mc63o-unsplash.jpg",
+      "position": "Event Coordinator",
+      "details": "John Doe has over 10 years of experience in event management. He is known for his meticulous attention to detail and creative event concepts."
+    },
+    {
+        "id": 2,
+      "author_name": "Jane Smith",
+      "author_img_url": "https://i.ibb.co/ChdWZxZ/microsoft-365-FHhb-HW4v-Fxc-unsplash.jpg",
+      "position": "Marketing Manager",
+      "details": "Jane Smith is a seasoned marketing professional with a passion for promoting events. She specializes in digital marketing and social media campaigns."
+    },
+    {
+        "id": 3,
+      "author_name": "Michael Johnson",
+      "author_img_url": "https://i.ibb.co/fn0Ft5y/charlie-green-3-Jmf-ENc-L24-M-unsplash.jpg",
+      "position": "Venue Manager",
+      "details": "Michael Johnson has extensive experience in managing event venues. He ensures that all logistical aspects run smoothly for your events."
+    },
+    {
+        "id": 4,
+      "author_name": "Emily Brown",
+      "author_img_url": "https://i.ibb.co/SBmYyvK/no-revisions-Uhp-Af0y-Swuk-unsplash.jpg",
+      "position": "Creative Director",
+      "details": "Emily Brown is a talented creative director who brings innovative and unique ideas to your events. Her designs leave a lasting impression."
+    }
+  ]

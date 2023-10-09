@@ -2,138 +2,80 @@
 
 const EventPrice = () => {
     return (
-        <div className="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
-            <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
-                <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
-                    standard
-                </p>
-                <h1 className="mt-6 flex justify-center gap-1 font-sans text-7xl font-normal tracking-normal text-white antialiased">
-                    <span className="mt-2 text-4xl">$</span>29
-                    <span className="self-end text-4xl">/mo</span>
-                </h1>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="mt-20 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr bg-clip-border p-8 text-white shadow-md bg-white shadow-pink-500/40">
+                <div className=" border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none space-y-5">
+                    <h1 className="-mt-20 w-40 flex justify-center mx-auto gap-1 text-7xl rounded-full py-5 border-2 text-white bg-gray-500 ">
+                        <span className="mt-2 text-4xl">$</span>299
+                    </h1>
+                    <div>
+                        <h2 className="font-semibold text-2xl tracking-widest">STANDARD</h2>
+                        <p className="italic text-gray-500">Ideal for Proposals, Birthdays</p>
+                    </div>
+                    <hr />
+
+                </div>
+                <div className="p-0">
+                    <ul className="flex flex-col gap-4 text-center text-gray-500 font-medium">
+                        <li>2 Days Event</li>
+                        <li>Full Services Consultation</li>
+                        <li>Breakfast & Lunch for Everyone</li>
+                        <li>FREE Gifts for Kids</li>
+                    </ul>
+                </div>
+                <div className="mt-12 p-0 mx-auto">
+                    <button className="btn hover:text-white text-gray-500 bg-transparent hover:bg-[#fd2d2d] border-2 border-gray-500  ">Order Now</button>
+                </div>
             </div>
-            <div className="p-0">
-                <ul className="flex flex-col gap-4">
-                    <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                className="h-3 w-3"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M4.5 12.75l6 6 9-13.5"
-                                ></path>
-                            </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                            5 team members
-                        </p>
-                    </li>
-                    <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                className="h-3 w-3"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M4.5 12.75l6 6 9-13.5"
-                                ></path>
-                            </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                            200+ components
-                        </p>
-                    </li>
-                    <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                className="h-3 w-3"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M4.5 12.75l6 6 9-13.5"
-                                ></path>
-                            </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                            40+ built-in pages
-                        </p>
-                    </li>
-                    <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                className="h-3 w-3"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M4.5 12.75l6 6 9-13.5"
-                                ></path>
-                            </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                            1 year free updates
-                        </p>
-                    </li>
-                    <li className="flex items-center gap-4">
-                        <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                className="h-3 w-3"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M4.5 12.75l6 6 9-13.5"
-                                ></path>
-                            </svg>
-                        </span>
-                        <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-                            Life time technical support
-                        </p>
-                    </li>
-                </ul>
+
+            <div className="mt-20 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr bg-clip-border p-8 text-white shadow-md bg-gray-50 shadow-pink-500/40">
+                <div className=" border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none space-y-5">
+                    <h1 className="-mt-20 w-40 flex justify-center mx-auto gap-1 text-7xl rounded-full py-5 border-2 text-white bg-[#fe3e01] ">
+                        <span className="mt-2 text-4xl">$</span>499
+                    </h1>
+                    <div>
+                        <h2 className="font-semibold text-2xl tracking-widest">PREMIUM</h2>
+                        <p className="italic text-gray-500">Ideal for Wedding & Seminars</p>
+                    </div>
+                    <hr />
+
+                </div>
+                <div className="p-0">
+                    <ul className="flex flex-col gap-4 text-center text-gray-500 font-medium">
+                        <li>2 Days Event</li>
+                        <li>Full Services Consultation</li>
+                        <li>Breakfast & Lunch for Everyone</li>
+                        <li>FREE Gifts for Kids</li>
+                    </ul>
+                </div>
+                <div className="mt-12 p-0 mx-auto">
+                    <button className="btn hover:text-white text-gray-500 bg-transparent hover:bg-gray-500 border-2 border-gray-500  ">Order Now</button>
+                </div>
             </div>
-            <div className="mt-12 p-0">
-                <button
-                    className="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-pink-500 shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                    data-ripple-dark="true"
-                >
-                    Buy Now
-                </button>
+
+            <div className="mt-20 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr bg-clip-border p-8 text-white shadow-md bg-white shadow-pink-500/40">
+                <div className=" border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none space-y-5">
+                    <h1 className="-mt-20 w-40 flex justify-center mx-auto gap-1 text-7xl rounded-full py-5 border-2 text-white bg-gray-500 ">
+                        <span className="mt-2 text-4xl">$</span>699
+                    </h1>
+                    <div>
+                        <h2 className="font-semibold text-2xl tracking-widest">CORPORATE</h2>
+                        <p className="italic text-gray-500">Ideal for large business events</p>
+                    </div>
+                    <hr />
+
+                </div>
+                <div className="p-0">
+                    <ul className="flex flex-col gap-4 text-center text-gray-500 font-medium">
+                        <li>2 Days Event</li>
+                        <li>Full Services Consultation</li>
+                        <li>Breakfast & Lunch for Everyone</li>
+                        <li>FREE Gifts for Kids</li>
+                    </ul>
+                </div>
+                <div className="mt-12 p-0 mx-auto">
+                    <button className="btn hover:text-white text-gray-500 bg-transparent hover:bg-[#fd2d2d] border-2 border-gray-500  ">Order Now</button>
+                </div>
             </div>
         </div>
     );

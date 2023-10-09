@@ -2,21 +2,20 @@ import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({ service }) => {
-    const { id, title, img, description, } = service;
+    const { id, name, title, img, description } = service;
     console.log(service)
     return (
         <div className="">
+            
             <div className="card card-compact bg-base-100 shadow-xl">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className='card-body'>
-                    <h2 className="font-bold text-2xl">{title}</h2>
-                    {
-                        description.length > 150 ?
-                            <p>{description.slice(0, 150)}<Link
-                                to={`/service/${id}`}
-                                className="text-[#fd2d2d] font-bold"> read more...</Link></p> :
-                            <p>{description}</p>
-                    }
+                    <h2 className="font-bold text-2xl">{name}</h2>
+                    <h3>{title}</h3>
+                    <button className="btn"><Link
+                        to={`/service/${id}`}
+                        className="text-[#fd2d2d] font-bold"> Details</Link></button>
+
                 </div>
             </div>
         </div>

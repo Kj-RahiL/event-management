@@ -8,12 +8,15 @@ import Contact from "../Pages/Contact/Contact";
 import LogIn from "../Login/LogIn";
 import Register from "../Login/Register";
 import ServiceDetails from "../Pages/Service/ServiceDetails";
+import ErrorELement from "../ErrorELement";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<ErrorELement></ErrorELement>,
       children:[
         {
             path:'/',
@@ -25,11 +28,12 @@ const router = createBrowserRouter([
         },
         {
             path:'/service/:id',
-            loader: ()=> fetch('/events.json'),
-            element:<ServiceDetails></ServiceDetails>
+            loader:()=> fetch('events.json'),
+            element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
         },
         {
             path:'/about',
+            loader:()=>fetch('/author.json'),
             element:<About></About>
         },
         {

@@ -1,9 +1,18 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
 import background from '../../assets/banner2.jpg'
+
 const Banner = () => {
+   useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+   },[])
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: `url(${background})` }}>
+        <div className="hero min-h-[90vh] " style={{ backgroundImage: `url(${background})` }}>
             <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div data-aos="zoom-in-down" data-aos-duration="2000" className="hero-content text-center text-neutral-content">
                 <div className="max-w-2xl">
                     <h1 className="mb-5 text-5xl font-bold">CELEBRATE YOUR EVENTS
                         THAT LASTS LONGER</h1>
