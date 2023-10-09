@@ -18,8 +18,8 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: `{}`. It's given empty object. because greetign declare empty object
-.
+#### Answer: A: `{}`
+<i> It's given empty object. because greetign declare empty object</i>
 
 </p>
 </details>
@@ -42,9 +42,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C: `"12"`. Js (+) addition used for number and string concatenation. The result will be string cause b parameter is string.
+#### Answer: C: `"12"`. 
 
-<i>Write your explanation here</i>
+<i>Js (+) addition used for number and string concatenation. The result will be string cause b parameter is string.</i>
 
 </p>
 </details>
@@ -68,9 +68,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`. Here we declare new value is info.favourite food. It's doesn't affect of the orginal food value.
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`.
 
-<i>Write your explanation here</i>
+<i> Here we declare new value is info.favourite food. It's doesn't affect of the orginal food value.</i>
 
 </p>
 </details>
@@ -93,9 +93,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B: `Hi there, undefined`. we called empty value. so the function parameter is undefined .
+#### Answer: B: `Hi there, undefined`.
 
-<i>Write your explanation here</i>
+<i> we called empty value. so the function parameter is undefined .</i>
 
 </p>
 </details>
@@ -121,9 +121,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C: 3. Here nums =[0, 1, 2, 3]. 0 is falsy value. nums is used forEach, it's given loop for every nums element so num will be [1,2,3]. now this 3 elememt count + num element. I thinks it's count length, not sure. please explain it my feedback why answer is 3. if i'm is wrong.
+#### Answer: C: 3. 
 
-<i>Write your explanation here</i>
+<i>Here nums =[0, 1, 2, 3]. 0 is falsy value. nums is used forEach, it's given loop for every nums element so num will be [1,2,3]. now this 3 elememt count + num element. I thinks it's count length, not sure. please explain it my feedback why answer is 3. if i'm is wrong.</i>
 
 </p>
 </details>
