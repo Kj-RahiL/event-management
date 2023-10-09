@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 
 const Register = () => {
-    const [success, setSuccess] = useState('')
+    
     const [errorPass, setErrorPass] = useState('')
     const { createUser } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate()
 
 
     const handleRegister = (e) => {
@@ -21,29 +23,33 @@ const Register = () => {
 
         // password validation
         setErrorPass('')
-        setSuccess('')
+       
 
         if (password.length < 6) {
             setErrorPass('Password should be 6 character')
+            toast.error('Password should be 6 character')
             return;
         }
         else if (!/.*[A-Z].*/.test(password)) {
             setErrorPass('Please, at least one capital latter')
+            toast.error('Please, at least one capital latter')
             return;
         }
         else if (!/.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-].*/.test(password)) {
             setErrorPass('Please, at least one special character')
+            toast.error('Please, at least one special character')
+
             return;
         }
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
-                    ;
-                setSuccess('Congrats!! User Create Successfully')
+                toast.success('Congrats!! User Create Successfully')
+                navigate(location?.state? location.state :'/')
 
             })
             .catch(error => {
-                console.error(error.message);
+                toast.error(error.message);
             })
     }
     return (
@@ -82,13 +88,9 @@ const Register = () => {
                     </form>
                     <h2 className="my-4 ">Already have an account? <Link className="text-pink-500 hover:text-blue-500" to='/login'>LogIn</Link></h2>
                 </div>
-                {
-                    success && <p className=" text-2xl text-center text-cyan-700">{success}</p>
-                }
+               
             </div>
-            {
-                success && <div><p>{success}</p><ToastContainer /></div>
-            }
+            
         </div>
     );
 };

@@ -1,4 +1,4 @@
-# Event Management website
+# Social Event Management website
 
 
 ### live link: 
