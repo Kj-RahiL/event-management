@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
     const { id, name, title, img, description } = service;
-    console.log(service)
+    // console.log(service)
     return (
         <div className="">
-            
+
             <div className="card card-compact bg-base-100 shadow-xl">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className='card-body'>

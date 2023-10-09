@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "date": "2023-01-15",
+      "name": "Wedding Events",
+      "title": "The Art of Planning Memorable Weddings",
+      "details": "In this blog post, we delve into the intricate details of wedding planning. From choosing the perfect venue to selecting exquisite floral arrangements, we explore the art of creating unforgettable wedding experiences.",
+      "img": "https://example.com/wedding-blog.jpg"
+    },
+    {
+      "id": 2,
+      "date": "2023-02-10",
+      "name": "Anniversaries",
+      "title": "Celebrating Love: Anniversary Planning Tips",
+      "details": "Celebrate love and commitment with our expert tips on planning the perfect anniversary celebration. From romantic venues to thoughtful gifts, discover how to make your anniversary truly special.",
+      "img": "https://example.com/anniversary-blog.jpg"
+    },
+    {
+      "id": 3,
+      "date": "2023-03-05",
+      "name": "Birthday Parties",
+      "title": "Birthday Bash Success: Planning Secrets",
+      "details": "Planning a memorable birthday party? Don't miss this blog post! We share insider secrets for creating birthday bashes that guests will rave about. Get ready to throw the ultimate party.",
+      "img": "https://example.com/birthday-blog.jpg"
+    },
+    {
+      "id": 4,
+      "date": "2023-04-20",
+      "name": "Engagement Events",
+      "title": "Engagement Party Essentials",
+      "details": "Announcing your engagement? Learn about the essentials of hosting an engagement party that sets the stage for your journey ahead. From invitations to toasts, we cover it all.",
+      "img": "https://example.com/engagement-blog.jpg"
+    },
+    {
+      "id": 5,
+      "date": "2023-05-15",
+      "name": "Corporate Functions",
+      "title": "Corporate Event Success: Tips and Tricks",
+      "details": "Ensure your corporate event is a resounding success with our expert tips and tricks. From agenda planning to networking strategies, discover the keys to making your event impactful.",
+      "img": "https://example.com/corporate-blog.jpg"
+    },
+    {
+      "id": 6,
+      "date": "2023-06-08",
+      "name": "Music Concerts",
+      "title": "Music Concerts: A Night to Remember",
+      "details": "Explore the magic of music concerts in this blog post. We take you behind the scenes to understand what goes into creating unforgettable musical experiences. Join us for a musical journey.",
+      "img": "https://example.com/concert-blog.jpg"
+    },
+    {
+      "id": 7,
+      "date": "2023-07-12",
+      "name": "Wedding Events",
+      "title": "Summer Weddings: Trends and Inspirations",
+      "details": "As summer approaches, discover the latest trends and inspirations for planning your summer wedding. From outdoor venues to refreshing cocktails, get ready for a sunny celebration.",
+      "img": "https://example.com/summer-wedding-blog.jpg"
+    },
+    {
+      "id": 8,
+      "date": "2023-08-25",
+      "name": "Birthday Parties",
+      "title": "Themed Birthday Parties: Ideas Galore",
+      "details": "Explore the world of themed birthday parties in this blog post. We provide a plethora of creative ideas for themed parties that will transport your guests to another world.",
+      "img": "https://example.com/themed-birthday-blog.jpg"
+    }
+  ]

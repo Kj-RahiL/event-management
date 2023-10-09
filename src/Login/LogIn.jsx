@@ -1,31 +1,38 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import facebook from '../assets/icons/fb.png'
 import google from '../assets/icons/google.png'
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const LogIn = () => {
-    const { signInUser, fbLogin, googleLogin } = useContext(AuthContext)
+    const { user, signInUser, fbLogin, googleLogin } = useContext(AuthContext)
+console.log(user)
+    const [success, setSuccess] = useState('')
+    const [errorPass, setErrorPass] = useState('')
     const location = useLocation();
     const navigate = useNavigate()
 
-    console.log(location)
+    // console.log(location)
     const handleLogin = (e) => {
         e.preventDefault()
         const from = new FormData(e.currentTarget)
         const email = from.get('email')
         const password = from.get('password')
-        console.log('register submit', email, password)
 
+        setErrorPass('')
+        setSuccess('')
         // user sign in
         signInUser(email, password)
             .then(result => {
                 console.log(result.user)
+                setSuccess('user log in successful')
 
                 navigate(location?.state? location.state :'/')
             })
             .catch(error => {
                 console.error(error.message);
+                console(error);
+                setErrorPass(error.message);
             })
 
         
@@ -81,6 +88,9 @@ const LogIn = () => {
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
+                        {
+                            errorPass && <p className=" text-sm py-2 text-red-700 text-center">{errorPass}</p>
+                        }
                         <button type="submit" className="btn w-full text-lg font-medium bg-pink-500 text-white normal-case ">Submit</button>
                     </form>
                     <h2 className="my-4 text-base font-medium text-center">Don’t have an account? <Link className="text-pink-500" to='/register'> Create an account</Link></h2>
@@ -89,7 +99,9 @@ const LogIn = () => {
                     <hr className="w-2/5 border" />
                     <span className="text-base font-medium">or</span>
                     <hr className="w-2/5 border" />
-
+                    {
+                    success && <p className=" text-2xl text-center text-cyan-700">{success}</p>
+                }
                 </div>
                 <div className="space-y-3 mb-10">
                     <div onClick={handleFbLogin} className="flex border rounded-3xl p-3 gap-5 items-center cursor-pointer">
