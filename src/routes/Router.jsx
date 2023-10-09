@@ -10,6 +10,7 @@ import Register from "../Login/Register";
 import ServiceDetails from "../Pages/Service/ServiceDetails";
 import ErrorELement from "../ErrorELement";
 import PrivateRoute from "./PrivateRoute";
+import BlogsCard from "../Pages/Blogs/BlogsCard";
 
 
 const router = createBrowserRouter([
@@ -38,7 +39,13 @@ const router = createBrowserRouter([
         },
         {
             path:'/blogs',
+            loader:()=>fetch('/blog.json'),
             element:<PrivateRoute><Blogs></Blogs></PrivateRoute>
+        },
+        {
+            path:'/blogs/:id',
+            loader:()=>fetch('/blog.json'),
+            element:<PrivateRoute><BlogsCard></BlogsCard></PrivateRoute>
         },
         {
             path:'/contact',

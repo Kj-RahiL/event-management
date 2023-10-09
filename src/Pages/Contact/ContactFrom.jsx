@@ -3,6 +3,7 @@
 const ContactFrom = () => {
     return (
         <div>
+            <h2 className="text-3xl font-bold text-[#fd2d2d] p-8"> Message Form</h2>
            <form >
            <div>
                 <input type="text" placeholder="Your Name" className="input input-bordered input-md w-full max-w-xs" />
