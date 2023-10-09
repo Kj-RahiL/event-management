@@ -3,7 +3,7 @@
 const EventPrice = () => {
     return (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <div className="mt-20 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr bg-clip-border p-8 text-white shadow-md bg-white shadow-pink-500/40">
+            <div className=" mt-20 relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr bg-clip-border p-8 text-white shadow-md bg-white shadow-pink-500/40">
                 <div className=" border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none space-y-5">
                     <h1 className="-mt-20 w-40 flex justify-center mx-auto gap-1 text-7xl rounded-full py-5 border-2 text-white bg-gray-500 ">
                         <span className="mt-2 text-4xl">$</span>299

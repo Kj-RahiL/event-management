@@ -63,13 +63,13 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar bg-[#000000bd] shadow-slate-900 text-white px-20 ">
+        <div className="navbar bg-[#000000bd] shadow-slate-900 text-white  md:px-20 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex={0} className="menu menu-sm font-semibold dropdown-content mt-2 z-[1] p-2 shadow bg-transparent bg-slate-200 text-black rounded-box w-auto">
                         {link}
                     </ul>
                 </div>
@@ -81,11 +81,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+            <label  className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
+                    <img src="https://i.ibb.co/5M5pv2P/icons8-avatar-48.png" alt="" />
+                    </div>
+                </label>
                 {
                     user ?
-                        <button onClick={handleSignOut} className="btn">SignOut</button>
+                        <button onClick={handleSignOut} className="btn btn-ghost">SignOut</button>
                         :
-                        <Link to='/login' className="btn">Login</Link>
+                        <Link to='/login' className="btn btn-ghost">Login</Link>
                 }
 
                 {/* <Link to='/login' className="btn">Login</Link> */}
