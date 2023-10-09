@@ -1,8 +1,14 @@
-# React + Vite
+# Event Management website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### live link: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+#### Website Features
+- This website hav 6 catagories service of event management.
+- The service details, contact and blog are private route, without login we can't see it.
+- The user login has valadition without register to can't login.
+- If we do register it's have some requirments like password validation, email, name and more.
+- if login successful see successful msg or toast, or not login get error see at error  msg or toast.
+- the homepage is used animation as like Aos
+
