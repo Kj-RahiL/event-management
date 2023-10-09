@@ -8,6 +8,8 @@ import { ToastContainer, toast } from "react-toastify";
 const Register = () => {
     const [success, setSuccess] = useState('')
     const {createUser} = useContext(AuthContext)
+    
+
     const handleRegister = (e) =>{
         e.preventDefault()
         const from = new FormData(e.currentTarget)

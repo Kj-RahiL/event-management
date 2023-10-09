@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
-import Navbar from "../Pages/Shared/Navbar";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import facebook from '../assets/icons/fb.png'
 import google from '../assets/icons/google.png'
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const LogIn = () => {
-    const { signInUser } = useContext(AuthContext)
+    const { signInUser, fbLogin, googleLogin } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate()
+
+    console.log(location)
     const handleLogin = (e) => {
         e.preventDefault()
         const from = new FormData(e.currentTarget)
@@ -18,10 +21,33 @@ const LogIn = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user)
+
+                navigate(location?.state? location.state :'/')
             })
             .catch(error => {
                 console.error(error.message);
             })
+
+        
+    }
+
+    const handleGoogleLogin = ()=>{
+        googleLogin()
+        .then(result=>{
+            console.log(result)
+        })
+        .catch(error=>{
+            console.error(error.message);
+        })
+    }
+    const handleFbLogin = ()=>{
+        fbLogin()
+        .then(result=>{
+            console.log(result)
+        })
+        .catch(error=>{
+            console.error(error.message);
+        })
     }
     return (
         <div>
@@ -66,11 +92,11 @@ const LogIn = () => {
 
                 </div>
                 <div className="space-y-3 mb-10">
-                    <div className="flex border rounded-3xl p-3 gap-5 items-center cursor-pointer">
+                    <div onClick={handleFbLogin} className="flex border rounded-3xl p-3 gap-5 items-center cursor-pointer">
                         <img className="w-5 h-5 ml-5" src={facebook} alt="" />
                         <h2 className="text-lg font-medium">Continue with facebook</h2>
                     </div>
-                    <div className="flex border rounded-3xl p-3 gap-5 items-center cursor-pointer">
+                    <div onClick={handleGoogleLogin} className="flex border rounded-3xl p-3 gap-5 items-center cursor-pointer">
                         <img className="w-5 h-5 ml-5" src={google} alt="" />
                         <h2 className="text-lg font-medium">Continue with Google</h2>
                     </div>
